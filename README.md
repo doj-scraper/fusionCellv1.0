@@ -5,8 +5,8 @@ Vite + React + TypeScript admin workspace for catalog, inventory, orders, and op
 ## Quick start
 
 ```bash
-npm ci
-npm run dev
+pnpm install --frozen-lockfile
+pnpm run dev
 ```
 
 ## Core admin improvements in this build
@@ -30,10 +30,10 @@ npm run dev
 ## Production checks
 
 ```bash
-npm run lint
-npm run test
-npm run typecheck
-npm run build
+pnpm run lint
+pnpm run test
+pnpm run typecheck
+pnpm run build
 ```
 
 ## Vercel deployment
@@ -41,12 +41,12 @@ npm run build
 This repository is now pre-configured for Vercel builds with `vercel.json`.
 
 ```bash
-npm run build:vercel
-npm run vercel:deploy
+pnpm run build:vercel
+pnpm run vercel:deploy
 ```
 
 If running in CI, make sure these environment variables are set:
 
+- `VITE_SUPABASE_PROJECT_ID`
 - `VITE_SUPABASE_URL`
-- `VITE_SUPABASE_ANON_KEY`
-
+- `VITE_SUPABASE_PUBLISHABLE_KEY`
